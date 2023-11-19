@@ -24,6 +24,13 @@
             "Emyasnikov\\LaravelApiKey\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Emyasnikov\\LaravelApiKey\\ServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }

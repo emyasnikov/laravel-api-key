@@ -1,10 +1,10 @@
-# Laravel Basic Auth
+# Laravel API Key
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/emyasnikov/laravel-api-key.svg?style=flat)](https://packagist.org/packages/emyasnikov/laravel-api-key)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE.md)
 [![Total Downloads](https://img.shields.io/packagist/dt/emyasnikov/laravel-api-key.svg?style=flat)](https://packagist.org/packages/emyasnikov/laravel-api-key)
 
-Basic authentication using master credentials for the application.
+Restrict access using API key.
 
 ## Installation
 
