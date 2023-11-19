@@ -4,11 +4,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Basic Authentication
+    | API Key
     |--------------------------------------------------------------------------
     |
-    | This options are used by the middleware to check if the user has to
-    | authenticate using basic authentication.
+    | This options are used by the middleware to check if the incoming requests
+    | should be authorized using API key.
     |
     */
 
