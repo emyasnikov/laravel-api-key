@@ -1,0 +1,36 @@
+{
+    "name": "emyasnikov/laravel-api-key",
+    "description": "Restrict access using API key.",
+    "keywords": [
+        "laravel",
+        "api",
+        "key"
+    ],
+    "homepage": "https://github.com/emyasnikov/laravel-api-key",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evgenij Myasnikov",
+            "email": "evgenij.myasnikov@gmail.com",
+            "homepage": "https://github.com/emyasnikov"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Emyasnikov\\LaravelApiKey\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Emyasnikov\\LaravelApiKey\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
