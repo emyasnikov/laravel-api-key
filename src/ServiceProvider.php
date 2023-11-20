@@ -2,14 +2,17 @@
 
 namespace Emyasnikov\LaravelApiKey;
 
+use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ServiceProvider extends BaseServiceProvider
 {
-    public function boot()
+    public function boot(Kernel $kernel)
     {
         $middleware = ApiKeyMiddleware::class;
+
+        $kernel->appendMiddlewareToGroup(config('api_key.group'), $middleware);
 
         $router = $this->app->make(Router::class);
         $router->aliasMiddleware(config('api_key.alias'), $middleware);

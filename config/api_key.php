@@ -24,6 +24,7 @@ return [
     */
 
     'alias' => env('API_KEY_ALIAS', 'auth.api_key'),
+    'group' => env('API_KEY_GROUP', 'api'),
     'header' => env('API_KEY_HEADER', 'X-API-KEY'),
     'param' => env('API_KEY_PARAM', 'api_key'),
 
