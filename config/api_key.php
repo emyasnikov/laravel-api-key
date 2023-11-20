@@ -23,6 +23,7 @@ return [
     |
     */
 
+    'alias' => env('API_KEY_ALIAS', 'auth.api_key'),
     'header' => env('API_KEY_HEADER', 'X-API-KEY'),
     'param' => env('API_KEY_PARAM', 'api_key'),
 
