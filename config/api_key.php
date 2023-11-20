@@ -12,6 +12,18 @@ return [
     |
     */
 
-    'api_key' => env('API_KEY', false),
+    'key' => env('API_KEY', false),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Middleware Settings
+    |--------------------------------------------------------------------------
+    |
+    | This options configure the middleware behaviour.
+    |
+    */
+
+    'header' => env('API_KEY_HEADER', 'X-API-KEY'),
+    'param' => env('API_KEY_PARAM', 'api_key'),
 
 ];
